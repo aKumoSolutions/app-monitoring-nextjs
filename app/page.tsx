@@ -1,9 +1,18 @@
-import Link from "next/link"
-import { CheckCircle, AlertTriangle, XCircle, ArrowRight, Github, Slack, Cloud, Menu } from "lucide-react"
+import Link from "next/link";
+import {
+  CheckCircle,
+  AlertTriangle,
+  XCircle,
+  ArrowRight,
+  Github,
+  Slack,
+  Cloud,
+  Menu,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import StatusDashboard from "@/components/status-dashboard"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import StatusDashboard from "@/components/status-dashboard";
 
 export default function Home() {
   return (
@@ -17,16 +26,28 @@ export default function Home() {
             <span>StatusMonitor</span>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#features" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="#features"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Features
             </Link>
-            <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="#services"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Services
             </Link>
-            <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="#pricing"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Pricing
             </Link>
-            <Link href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="#contact"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Contact
             </Link>
           </nav>
@@ -52,8 +73,9 @@ export default function Home() {
                     Monitor all your services in one place
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Get real-time status updates for all your critical third-party services. Never be caught off guard
-                    by outages again.
+                    Get real-time status updates for all your critical
+                    third-party services. Never be caught off guard by outages
+                    again.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -89,7 +111,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section
+          id="features"
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+        >
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -100,8 +125,8 @@ export default function Home() {
                   Everything you need to stay informed
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our platform provides comprehensive monitoring tools to keep you updated on all your critical
-                  services.
+                  Our platform provides comprehensive monitoring tools to keep
+                  you updated on all your critical services.
                 </p>
               </div>
             </div>
@@ -113,7 +138,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Real-time Monitoring</h3>
                   <p className="text-muted-foreground">
-                    Get instant updates on service status changes with our real-time monitoring system.
+                    Get instant updates on service status changes with our
+                    real-time monitoring system.
                   </p>
                 </CardContent>
               </Card>
@@ -124,7 +150,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Instant Alerts</h3>
                   <p className="text-muted-foreground">
-                    Receive notifications via email, SMS, or Slack when any of your critical services go down.
+                    Receive notifications via email, SMS, or Slack when any of
+                    your critical services go down.
                   </p>
                 </CardContent>
               </Card>
@@ -135,7 +162,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Service Integration</h3>
                   <p className="text-muted-foreground">
-                    Easily integrate with popular services like GitHub, Slack, Digital Ocean, and many more.
+                    Easily integrate with popular services like GitHub, Slack,
+                    Digital Ocean, and many more.
                   </p>
                 </CardContent>
               </Card>
@@ -165,7 +193,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Uptime History</h3>
                   <p className="text-muted-foreground">
-                    Track historical uptime data and identify patterns to improve your service reliability.
+                    Track historical uptime data and identify patterns to
+                    improve your service reliability.
                   </p>
                 </CardContent>
               </Card>
@@ -190,7 +219,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Performance Metrics</h3>
                   <p className="text-muted-foreground">
-                    Monitor response times and performance metrics to ensure optimal service delivery.
+                    Monitor response times and performance metrics to ensure
+                    optimal service delivery.
                   </p>
                 </CardContent>
               </Card>
@@ -217,7 +247,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Custom Dashboards</h3>
                   <p className="text-muted-foreground">
-                    Create personalized dashboards to monitor the services that matter most to your team.
+                    Create personalized dashboards to monitor the services that
+                    matter most to your team.
                   </p>
                 </CardContent>
               </Card>
@@ -236,7 +267,8 @@ export default function Home() {
                   Monitor all your critical services
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our platform integrates with a wide range of popular services to provide comprehensive monitoring.
+                  Our platform integrates with a wide range of popular services
+                  to provide comprehensive monitoring.
                 </p>
               </div>
             </div>
@@ -249,7 +281,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Slack</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Monitor Slack's service status to ensure your team's communication is always up and running.
+                    Monitor Slacks service status to ensure your teams
+                    communication is always up and running.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <CheckCircle className="mr-2 size-4 text-green-500" />
@@ -265,7 +298,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">GitHub</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Stay informed about GitHub's status to ensure your development workflow isn't interrupted.
+                    Stay informed about GitHubs status to ensure your
+                    development workflow isnt interrupted.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <CheckCircle className="mr-2 size-4 text-green-500" />
@@ -281,7 +315,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Digital Ocean</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Monitor Digital Ocean's infrastructure to ensure your cloud services remain available.
+                    Monitor Digital Oceans infrastructure to ensure your cloud
+                    services remain available.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <AlertTriangle className="mr-2 size-4 text-amber-500" />
@@ -315,7 +350,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">AWS</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Keep track of AWS service status to ensure your cloud infrastructure remains reliable.
+                    Keep track of AWS service status to ensure your cloud
+                    infrastructure remains reliable.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <CheckCircle className="mr-2 size-4 text-green-500" />
@@ -344,7 +380,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Twitter</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Monitor Twitter's platform status to stay informed about any service disruptions.
+                    Monitor Twitters platform status to stay informed about any
+                    service disruptions.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <XCircle className="mr-2 size-4 text-red-500" />
@@ -374,7 +411,8 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Discord</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Track Discord's service status to ensure your community communication remains uninterrupted.
+                    Track Discords service status to ensure your community
+                    communication remains uninterrupted.
                   </p>
                   <div className="mt-4 flex items-center text-sm">
                     <CheckCircle className="mr-2 size-4 text-green-500" />
@@ -392,16 +430,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section
+          id="pricing"
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+        >
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Pricing
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Simple, transparent pricing</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                  Simple, transparent pricing
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Choose the plan that's right for your team. All plans include a 14-day free trial.
+                  Choose the plan thats right for your team. All plans include a
+                  14-day free trial.
                 </p>
               </div>
             </div>
@@ -410,7 +454,9 @@ export default function Home() {
                 <CardContent className="flex flex-1 flex-col p-6">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold">Starter</h3>
-                    <p className="text-muted-foreground">Perfect for small teams just getting started.</p>
+                    <p className="text-muted-foreground">
+                      Perfect for small teams just getting started.
+                    </p>
                   </div>
                   <div className="mt-6 space-y-2">
                     <div className="flex items-baseline gap-2">
@@ -448,7 +494,9 @@ export default function Home() {
                 <CardContent className="flex flex-1 flex-col p-6">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold">Pro</h3>
-                    <p className="text-muted-foreground">For growing teams that need more features.</p>
+                    <p className="text-muted-foreground">
+                      For growing teams that need more features.
+                    </p>
                   </div>
                   <div className="mt-6 space-y-2">
                     <div className="flex items-baseline gap-2">
@@ -493,7 +541,9 @@ export default function Home() {
                 <CardContent className="flex flex-1 flex-col p-6">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold">Enterprise</h3>
-                    <p className="text-muted-foreground">For large organizations with advanced needs.</p>
+                    <p className="text-muted-foreground">
+                      For large organizations with advanced needs.
+                    </p>
                   </div>
                   <div className="mt-6 space-y-2">
                     <div className="flex items-baseline gap-2">
@@ -549,7 +599,8 @@ export default function Home() {
                 Ready to start monitoring your services?
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Join thousands of teams who trust our platform to keep them informed about their critical services.
+                Join thousands of teams who trust our platform to keep them
+                informed about their critical services.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
@@ -587,18 +638,30 @@ export default function Home() {
             <span>StatusMonitor</span>
           </div>
           <nav className="flex gap-4 sm:gap-6">
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Terms
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Privacy
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Contact
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -615,11 +678,17 @@ export default function Home() {
               </svg>
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <Github className="size-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -642,6 +711,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
