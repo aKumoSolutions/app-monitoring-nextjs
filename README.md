@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# API Monitoring SaaS
+
+This repository contains the source code for an API monitoring SaaS application built with the Next.js framework. This service enables clients to set up and manage API status pages for 24/7 monitoring.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+To run this application locally, follow the steps outlined below.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Installation
+
+Before proceeding, ensure you have **Node.js** and **npm** installed on your system. To simplify setup, a script (`setup.sh`) is provided in the repository.
+
+Run the setup script to install Node.js and npm:
+
+```sh
+./setup.sh
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After running the setup script, install project dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+### Development Server
 
-To learn more about Next.js, take a look at the following resources:
+Start the development server with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Build for Production
 
-## Deploy on Vercel
+To build the project for production:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Start the Production Server
+
+After building, start the production server with:
+
+```sh
+npm run start
+```
+
+### Linting
+
+A custom linting script is available, which uses **Prettier** for code formatting. To check and automatically format code:
+
+```sh
+npm run lint
+```
+
+This runs:
+
+```sh
+prettier --check --write .
+```
+
+## Project Structure
+
+```
+/project-root
+  ├── public/          # Static assets
+  ├── app/             # Next.js App Router (Server Components, Layouts, Pages)
+  ├── components/      # Reusable UI components
+  ├── styles/         # Global styles
+  ├── scripts/        # Utility scripts (e.g., setup.sh)
+  ├── package.json     # Project dependencies
+  |── next.config.ts   # Project config file
+  ├── README.md        # Project documentation
+```
+
+## Contributing
+
+We welcome contributions to improve this project. Please follow the standard Git workflow:
+
+1. Fork the repository
+2. Create a new branch (`feature-branch`)
+3. Commit changes
+4. Push the branch and submit a PR
+
+## License
+
+This project is licensed under the MIT License.
+
+```
+
+```
