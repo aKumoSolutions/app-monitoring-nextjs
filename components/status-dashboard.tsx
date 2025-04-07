@@ -111,8 +111,8 @@ export default function StatusDashboard() {
                     service.status === "operational"
                       ? "text-green-500"
                       : service.status === "degraded"
-                      ? "text-amber-500"
-                      : "text-red-500"
+                        ? "text-amber-500"
+                        : "text-red-500"
                   }`}
                 >
                   {getStatusText(service.status)}

@@ -7,12 +7,12 @@ import {
   Github,
   Slack,
   Cloud,
-  Menu,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import StatusDashboard from "@/components/status-dashboard";
+import Navbar from "@/components/login";
 
 export default function Home() {
   return (
@@ -52,14 +52,15 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button variant="outline" className="hidden md:flex">
+            <Navbar />
+            {/* <Button variant="outline" className="hidden md:flex">
               Log in
             </Button>
             <Button>Get Started</Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="size-5" />
               <span className="sr-only">Toggle menu</span>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </header>
