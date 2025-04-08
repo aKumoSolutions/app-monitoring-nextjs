@@ -22,7 +22,7 @@ Before proceeding, ensure you have **Node.js** and **npm** installed on your sys
 Run the setup script to install Node.js and npm:
 
 ```sh
-./setup.sh
+bash scripts/setup.sh
 ```
 
 After running the setup script, install project dependencies:
@@ -33,15 +33,7 @@ npm install
 
 ## Available Scripts
 
-### Development Server
-
-Start the development server with:
-
-```sh
-npm run dev
-```
-
-### Build for Production
+### Build for Production on AWS EC2 instance
 
 To build the project for production:
 
@@ -55,6 +47,15 @@ After building, start the production server with:
 
 ```sh
 npm run start
+```
+
+
+### For Local Development
+
+Start the development server with:
+
+```sh
+npm run dev
 ```
 
 ### Linting
