@@ -1,56 +1,62 @@
 # API Monitoring SaaS
 
-This repository contains the source code for an API monitoring SaaS application built with the Next.js framework. This service enables clients to set up and manage API status pages for 24/7 monitoring.
+This repository contains the source code for an API monitoring SaaS application built with the Next.js framework. The service enables clients to create and manage API status pages for continuous monitoring of their APIs.
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Available Scripts](#available-scripts)
+- [Running the Application](#running-the-application)
+  - [Frontend on AWS EC2 (Amazon Linux 2023)](#frontend-on-aws-ec2-amazon-linux-2023)
+  - [Frontend on Local Machine](#frontend-on-local-machine)
+- [Linting](#linting)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started
 
-To run this application locally, follow the steps outlined below.
+To get started with this project, follow the steps below to set up the application on your local machine or cloud server.
 
 ## Installation
 
-Before proceeding, ensure you have **Node.js** and **npm** installed on your system. To simplify setup, a script (`setup.sh`) is provided in the repository.
+Ensure that you have **Node.js** and **npm** installed on your system. You can download and install them from [here](https://nodejs.org/).
 
-Run the setup script to install Node.js and npm:
+## Running the Application
 
-```sh
-bash scripts/setup.sh
-```
+You can run the API monitoring application either on an **AWS EC2 instance** or on your **local machine**. 
 
-After running the setup script, install project dependencies:
+### Frontend on AWS EC2 (Amazon Linux 2023)
 
-```sh
-npm install
-```
+1. **Prepare the Environment**  
+   Ensure you have an EC2 instance running Amazon Linux 2023 with SSH access.
 
-## Available Scripts
+2. **Run the Setup Script**  
+   The repository contains a `setup.sh` script to help you install Node.js and npm. Run the script with the following command:
 
-### Build for Production on AWS EC2 instance
+   ```bash
+   bash scripts/setup.sh
 
-To build the project for production:
+3. **Install Project Dependencies**
+   After running the setup script, install the necessary dependencies:
 
-```sh
-npm run build
-```
+   ```bash
+   npm install
 
-### Start the Production Server
+4. **Build the Project for Production**
+   Build the project in preparation for production:
+   
+   ```bash
+   npm run build
 
-After building, start the production server with:
+5. **Start the Production Server**
+   Once the build is complete, you can start the production server:
+   
+   ```bash
+   npm run start
 
-```sh
-npm run start
-```
 
-
-### For Local Development
+## For Local Development
 
 Start the development server with:
 
