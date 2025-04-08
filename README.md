@@ -26,7 +26,7 @@ Ensure that you have **Node.js** and **npm** installed on your system. You can d
 
 You can run the API monitoring application either on an **AWS EC2 instance** or on your **local machine**. 
 
-### Frontend on AWS EC2 (Amazon Linux 2023)
+## Frontend on AWS EC2 (Amazon Linux 2023)
 
 1. **Prepare the Environment**  
    Ensure you have an EC2 instance running Amazon Linux 2023 with SSH access.
