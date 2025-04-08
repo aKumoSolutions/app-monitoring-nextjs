@@ -43,13 +43,18 @@ You can run the API monitoring application either on an **AWS EC2 instance** or 
    ```bash
    npm install
 
-4. **Build the Project for Production**
+4. **Update .env file**
+   Open the .env file and update the values with Backend URL or IP address
+   ```bash
+   NEXT_PUBLIC_BACKEND_URL="192.168.1.0:8000"
+
+5. **Build the Project for Production**
    Build the project in preparation for production:
    
    ```bash
    npm run build
 
-5. **Start the Production Server**
+6. **Start the Production Server**
    Once the build is complete, you can start the production server:
    
    ```bash
