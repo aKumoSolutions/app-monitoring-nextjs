@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
+import { toast } from "sonner";
 const services = [
   {
     name: "Slack",
@@ -125,7 +125,14 @@ export function ServicesSection() {
           ))}
         </div>
         <div className="flex justify-center">
-          <Button size="lg" variant="outline" className="cursor-pointer">
+          <Button
+            size="lg"
+            variant="outline"
+            className="cursor-pointer"
+            onClick={() => {
+              toast.info("Coming soon! We're working on it.");
+            }}
+          >
             View all supported services
             <ArrowRight className="ml-2 size-5" />
           </Button>

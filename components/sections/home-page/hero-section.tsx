@@ -3,7 +3,7 @@
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import StatusDashboard from "@/components/status-dashboard";
-
+import { toast } from "sonner";
 export function HeroSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -20,11 +20,24 @@ export function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="h-12">
+              <Button
+                size="lg"
+                className="h-12 cursor-pointer"
+                onClick={() => {
+                  toast.info("Coming soon! We're working on it.");
+                }}
+              >
                 Start monitoring
                 <ArrowRight className="ml-2 size-5" />
               </Button>
-              <Button size="lg" variant="outline" className="h-12">
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-12 cursor-pointer"
+                onClick={() => {
+                  toast.info("Coming soon! We're working on it.");
+                }}
+              >
                 View demo
               </Button>
             </div>

@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { toast } from "sonner";
 
 const plans = [
   {
@@ -104,6 +105,9 @@ export function PricingSection() {
                 <Button
                   variant={plan.buttonVariant}
                   className="w-full cursor-pointer"
+                  onClick={() => {
+                    toast.info("Coming soon! We're working on it.");
+                  }}
                 >
                   {plan.buttonText}
                 </Button>
