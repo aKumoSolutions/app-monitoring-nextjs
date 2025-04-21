@@ -27,14 +27,14 @@ export async function POST(request: Request): Promise<NextResponse> {
             message: "Please check your credentials and try again.",
             error: "Invalid email or password. ",
           },
-          { status: 401 }
+          { status: 401 },
         );
       }
 
       const token = jwt.sign(
         { email: user.email, name: user.name },
         JWT_SECRET,
-        { expiresIn: "1h" }
+        { expiresIn: "1h" },
       );
 
       return NextResponse.json<LoginResponse>({
@@ -59,7 +59,7 @@ export async function POST(request: Request): Promise<NextResponse> {
             message: "User already exists",
             error: "User already exists",
           },
-          { status: 400 }
+          { status: 400 },
         );
       }
 

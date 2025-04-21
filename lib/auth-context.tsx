@@ -22,7 +22,7 @@ interface AuthContextType {
   signup: (
     email: string,
     password: string,
-    name: string
+    name: string,
   ) => Promise<SignUpResponse>;
   logout: () => Promise<void>;
 }
@@ -42,7 +42,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = async (
     email: string,
-    password: string
+    password: string,
   ): Promise<LoginResponse> => {
     try {
       const url = makeUrl("login").toString();
@@ -78,7 +78,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signup = async (
     email: string,
     password: string,
-    name: string
+    name: string,
   ): Promise<SignUpResponse> => {
     try {
       const url = makeUrl("signup").toString();

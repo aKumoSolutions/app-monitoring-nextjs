@@ -28,7 +28,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ onClose }) => {
             "Content-Type": "application/x-www-form-urlencoded",
           },
           body: new URLSearchParams({ username, password }).toString(),
-        }
+        },
       );
 
       const data = await response.json();
