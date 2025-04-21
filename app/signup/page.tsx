@@ -152,7 +152,7 @@ export default function SignupPage() {
                 />
                 <Button
                   type="submit"
-                  className="w-full"
+                  className="w-full cursor-pointer"
                   disabled={
                     !form.formState.isValid || form.formState.isSubmitting
                   }

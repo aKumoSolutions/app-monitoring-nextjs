@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
-import LoginModal from "./loginForm";
 import { useRouter } from "next/navigation";
 
 const Navbar: React.FC = () => {
-  const [showLogin, setShowLogin] = useState<boolean>(false);
   const router = useRouter();
   return (
     <>
@@ -32,8 +30,6 @@ const Navbar: React.FC = () => {
           <span className="sr-only">Toggle menu</span>
         </Button>
       </div>
-
-      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
     </>
   );
 };
