@@ -48,11 +48,10 @@ You can run the API monitoring application either on an **AWS EC2 instance** or 
    ```
 
 4. **Update .env file**
-   Open the .env file and update the values with Backend URL or IP address
+   Open the .env file and update the values with Backend URL or IP address (if you skipped Step 2)
 
    ```bash
-   NEXT_PUBLIC_BACKEND_URL="192.168.1.0:8000"
-
+   BACKEND_URL="192.168.1.0:8000"
    ```
 
 5. **Build the Project for Production**
