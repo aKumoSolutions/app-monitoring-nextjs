@@ -5,13 +5,13 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 export function getBaseUrl() {
-  return process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+  return process.env.BACKEND_URL ?? "http://localhost:8000";
 }
 
 export const endpoints = {
   login: "/api/auth",
-  signup: "/api/auth",
-  logout: "/api/auth",
+  signup: "/api/users",
+  logout: "/api/logout",
 };
 
 export function makeUrl(path: keyof typeof endpoints) {

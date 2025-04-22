@@ -5,8 +5,10 @@ import { CheckCircle, AlertTriangle, XCircle, Clock } from "lucide-react";
 
 export default function StatusDashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
+    setHasMounted(true);
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -87,7 +89,7 @@ export default function StatusDashboard() {
             Service Status
           </h3>
           <div className="text-sm text-muted-foreground">
-            {currentTime.toLocaleTimeString()}
+            {hasMounted ? currentTime.toLocaleTimeString() : "--:--:--"}
           </div>
         </div>
         <p className="text-sm text-muted-foreground">
