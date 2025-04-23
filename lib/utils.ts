@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 export function getBaseUrl() {
-  return process.env.BACKEND_URL ?? "http://localhost:8000";
+  return process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:8000";
 }
 
 export const endpoints = {
